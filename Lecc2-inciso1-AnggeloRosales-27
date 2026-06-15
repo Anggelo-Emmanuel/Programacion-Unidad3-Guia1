@@ -1,0 +1,29 @@
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        Console.WriteLine("Lecc16-Act2-Inciso1");
+        Console.WriteLine("Eliezer Crup/Clave 27");
+
+        //Arreglo inicial
+        int[] edadPersona = new int[7];
+        int cantidadPersonasMayores = 0;
+
+        for (int i = 0; i < edadPersona.Length; i++)
+        {
+            Console.WriteLine("Ingrese la edad " + (i+1) + ": ");
+            edadPersona[i] = Convert.ToInt32(Console.ReadLine());
+            if (edadPersona[i]>=18)
+            {
+                cantidadPersonasMayores++;
+            }
+
+        }
+        Console.Clear();
+        for (int i = 0; i < edadPersona.Length; i++)
+        {
+            Console.WriteLine(edadPersona[i]+ "-");
+        }
+        Console.WriteLine("La canidad de personas mayores de edad es: "+cantidadPersonasMayores);
+    }
+    }
