@@ -3,7 +3,7 @@ internal class Program
     private static void Main(string[] args)
     {
         Console.WriteLine("Lecc16-Act2-Inciso1");
-        Console.WriteLine("Eliezer Crup/Clave 27");
+        Console.WriteLine("Anggelo Rosales/Clave 27");
 
         //Arreglo inicial
         int[] edadPersona = new int[7];
