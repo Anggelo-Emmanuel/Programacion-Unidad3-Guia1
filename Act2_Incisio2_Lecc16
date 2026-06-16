@@ -1,0 +1,34 @@
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+
+        Console.WriteLine(" Act2_Incisio2_Lecc16");
+        Console.WriteLine("Anggelo Rosales/Clave 27");
+        
+        int[] numeros = new int[8];
+
+        for (int i = 0; i < 8; i++)
+        {
+            Console.Write("Ingrese un numero: ");
+            numeros[i] = Convert.ToInt32(Console.ReadLine());
+        }
+
+        int mayor = numeros[0];
+        int posicion = 0;
+
+        for (int i = 1; i < 8; i++)
+        {
+            if (numeros[i] > mayor)
+            {
+                mayor = numeros[i];
+                posicion = i;
+            }
+        }
+
+        Console.WriteLine("El numero mayor es: " + mayor);
+        Console.WriteLine("Se encuentra en la posicion: " + posicion);
+
+        Console.ReadKey();
+    }
+}
